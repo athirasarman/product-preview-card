@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 24px;
+}
+.product-preview-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+.prodeuct-preview-content {
+  padding: 24px;
+}
+/* Media query for mobile */
+@media (max-width: 767px) {
+  .banner-image {
+    /* Mobile styles */
+    content: url("./assets/images/image-product-mobile.jpg");
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+  .product-preview-container {
+    flex-direction: row;
+    max-width: 500px;
+  }
+  .banner-image {
+    /* Desktop styles */
+    content: url("./assets/images/image-product-desktop.jpg");
+    max-height: 250px;
+    width: 250px;
+    object-fit: cover;
+    height:auto;
+  }
+}
