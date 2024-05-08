@@ -2,6 +2,7 @@
     /* ### Primary Colors */
     --dark-cyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
+    --very-dark-cyan:hsl(158deg 36.91% 16.45%);
 
     /* Neutral Colors */
     --very-dark-blue: hsl(212, 21%, 14%);

@@ -4,17 +4,84 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   margin: 24px;
 }
 .product-preview-container {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: var(--white);
 }
-.prodeuct-preview-content {
+.product-preview-content {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product-tag {
+  font-family: var(--paragraph-font);
+  font-size: var(--font-size-paragraph);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+.product-heading {
+  font-family: var(--heading-font);
+  margin-top: 14px;
+  text-align: left;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.product-description {
+  font-family: var(--paragraph-font);
+  font-size: var(--font-size-paragraph);
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.add-to-cart {
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-family: var(--paragraph-font);
+}
+.add-to-cart:active{
+  background-color: var(--very-dark-cyan);
+}
+.button-logo {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+.product-price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-price {
+  font-size: 32px;
+  color: var(--dark-cyan);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  margin-right: 18px;
+}
+.old-product-price {
+  font-family: var(--paragraph-font);
+  font-size: var(--font-size-paragraph);
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-weight: 500;
 }
 /* Media query for mobile */
 @media (max-width: 767px) {
@@ -25,8 +92,8 @@
     height: auto;
     object-fit: cover;
     max-height: 300px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
   }
 }
 
@@ -39,9 +106,16 @@
   .banner-image {
     /* Desktop styles */
     content: url("./assets/images/image-product-desktop.jpg");
-    max-height: 250px;
     width: 250px;
     object-fit: cover;
-    height:auto;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  .product-heading {
+    line-height: 1;
+  }
+  .product-preview-content {
+    max-width: 250px;
   }
 }
